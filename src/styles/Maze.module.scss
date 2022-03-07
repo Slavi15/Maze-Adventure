@@ -4,89 +4,6 @@
     align-items: center;
 }
 
-.mapControls {
-    .gameMap {
-        .tilesLayer,
-        .spritesLayer,
-        .tilesLayer div,
-        .spritesLayer div {
-            position: absolute;
-        }
-          
-        .tilesLayer div {
-            border: 1px solid #282828;
-        }            
-    }
-}
-
-.mathsContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    .exercises {
-        font-family: 'Montserrat', sans-serif;
-        font-size: 35px;
-        margin-bottom: 5vh;
-    }
-
-    .mathsTasks {
-        width: 40%;
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        color: #282828;
-        font-family: 'Poppins', sans-serif;
-        font-size: 40px;
-
-        .box {
-            border: 2px solid #282828;
-            width: 60px;
-            height: 50px;
-
-            .numberOne, .numberTwo {
-                text-align: center;
-                line-height: 55px;
-            }
-        }
-    }
-
-    .inputField {
-        border: 2px solid #282828;
-        width: 60px;
-        height: 48px;
-        font-size: 40px;
-        text-align: center;
-    }
-
-    .button {
-        background-color: transparent;
-        color: #157A6E;
-        margin-top: 4vh;
-        width: 180px;
-        height: 50px;
-        line-height: 25px;
-        vertical-align: middle;
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 500;
-        font-size: 20px;
-        border: 5px solid;
-        transition: 0.25s;
-        outline: none;
-        cursor: pointer;
-        &:hover {
-            color: #282828;
-            border-color: #FFD447;
-            animation: pulse 1s;
-            box-shadow: 0 0 0 1em rgba(#fff, 0);
-        }
-    
-        @keyframes pulse {
-            0% { box-shadow: 0 0 0 0 #FFD447 }
-        }
-    }
-}
-
 .overlay {
     position: fixed;
     display: none;
@@ -98,12 +15,12 @@
     background-color: rgba(40, 40, 40, 0.995);
 
     .mainMessage {
-        width: 50%;
+        width: 60%;
         color: whitesmoke;
         font-family: 'Montserrat', sans-serif;
-        font-size: 30px;
+        font-size: 35px;
         text-align: center;
-        margin: 8% auto 7% auto;
+        margin: 15% auto;
     }
 
     .text {
@@ -115,20 +32,5 @@
         width: 100%;
         bottom: 20px;
         letter-spacing: 1px
-    }
-
-    .buttonsText {
-        position: absolute;
-        width: 100%;
-        color: whitesmoke;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 25px;
-        text-align: center;
-    }
-
-    .keyButtons {
-        display: block;
-        max-width: 15%;
-        margin: 10% auto;
     }
 }

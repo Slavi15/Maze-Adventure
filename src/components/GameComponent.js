@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useRef, useContext } from 'react';
 import { AppContext } from './MazeComponent.js';
 import styles from '../styles/Game.module.scss';
+import img from '../assets/flag.png';
 const PF = require('pathfinding');
 
 const GameComponent = () => {
@@ -117,7 +118,10 @@ const GameComponent = () => {
             if (sprite.id === 'player') {
                 sprite.innerHTML = sessionStorage.getItem('emoji');
                 sprite.style.fontSize = '52.5px';
-            }
+            } else if (sprite.id === 'goal') {
+                sprite.innerHTML = `<img src=${img} alt='flag' />`;
+                sprite.style.fontSize = '55px';
+            };
 
             let layer = this.el.querySelector('#sprites');
             layer.appendChild(sprite);
@@ -142,9 +146,8 @@ const GameComponent = () => {
 
         Game.prototype.checkGoal = function () {
             if (this.player.x === this.goal.x && this.player.y === this.goal.y) {
-                console.log('Good Job!');
-                sessionStorage.clear();
-                window.location.href = 'http://localhost:3000/heroes';
+                // console.log('Good Job!');
+                window.location.href = 'http://localhost:3000/finish';
             };
         };
 
@@ -161,7 +164,7 @@ const GameComponent = () => {
                 // console.log(`State: ${state.inputText}`);
                 // console.log(`Result: ${resultValue}`);
             } else if (state.inputText !== resultValue) {
-                document.getElementById('error').textContent = "Неправилен отговор!";
+                document.getElementById('error').textContent = "Помисли и опитай отново!";
             };
 
             const numberOne = document.getElementById('numberOne');

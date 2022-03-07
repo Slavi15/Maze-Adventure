@@ -2,7 +2,6 @@ import React, { useReducer } from 'react';
 import GameComponent from './GameComponent.js';
 import MazeForm from './MazeForm.js';
 import styles from '../styles/Maze.module.scss';
-import img from '../assets/arrows.png';
 
 export const AppContext = React.createContext();
 
@@ -33,8 +32,6 @@ const MazeComponent = () => {
             </div>
             <div id="overlay" className={styles.overlay}>
                 <div className={styles.mainMessage}>{`Реши вярно всички задачи и преведи героя на име ${sessionStorage.getItem('name')} по пътя до света на забавленията, който го очаква от другата страна`}</div>
-                <div className={styles.buttonsText}>Героят се управлява с тези бутони</div>
-                <img className={styles.keyButtons} src={img} alt="keyboard buttons" />
                 <div className={styles.text}>Натисни SPACE, за да продължиш</div>
             </div>
         </div>

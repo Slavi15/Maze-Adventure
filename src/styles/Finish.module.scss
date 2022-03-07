@@ -1,0 +1,49 @@
+.finishContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .img {
+        margin: 7vh auto 2vh auto;
+        max-width: 50%;
+    }
+
+    .text {
+        margin: 3vh auto 3vh auto;
+        width: 60%;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .button {
+        background-color: transparent;
+        color: #157A6E;
+        width: 280px;
+        height: 70px;
+        line-height: 25px;
+        vertical-align: middle;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        font-size: 22.5px;
+        border: 5px solid;
+        transition: 0.25s;
+        outline: none;
+        cursor: pointer;
+        &:hover {
+            color: #282828;
+            border-color: #FFD447;
+            animation: pulse 1s;
+            box-shadow: 0 0 0 1em rgba(#fff, 0);
+        }
+    
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 #FFD447 }
+        }
+    }
+
+    .confetti {
+        margin: 0 auto;
+    }
+}

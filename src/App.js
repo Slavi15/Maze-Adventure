@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Landing from './components/Landing.js';
 import EmojiSelector from './components/EmojiSelector.js';
 import MazeComponent from './components/MazeComponent';
-// import MazeTestInOne from './components/MazeTestInOne.js';
+import FinishScreen from './components/FinishScreen.js';
 
 const App = () => {
   return (
@@ -13,6 +13,7 @@ const App = () => {
           <Route exact path="/" element={<Landing />}></Route>
           <Route exact path="/heroes" element={<EmojiSelector />}></Route>
           <Route exact path="/game" element={<MazeComponent />}></Route>
+          <Route exact path="/finish" element={<FinishScreen />}></Route>
         </Routes>
       </BrowserRouter>
     </div>
