@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Landing from './components/Landing.js';
+import EmojiSelector from './components/EmojiSelector.js';
+import MazeComponent from './components/MazeComponent';
+// import MazeTestInOne from './components/MazeTestInOne.js';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <BrowserRouter>
+        <Routes>
+          <Route exact path="/" element={<Landing />}></Route>
+          <Route exact path="/heroes" element={<EmojiSelector />}></Route>
+          <Route exact path="/game" element={<MazeComponent />}></Route>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

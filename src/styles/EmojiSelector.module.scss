@@ -1,0 +1,81 @@
+.container {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .input {
+        width: 25%;
+        margin: 12vh auto 1vh auto;
+        height: 6vh;
+        vertical-align: middle;
+        border-radius: 5px;
+        outline: none;
+        border: 1.5px solid #cfcfcf;
+        &::placeholder {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.2em;
+            padding-left: 20px;
+            font-weight: lighter;
+            color: #999;
+        }
+        &:focus {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.2em;
+            padding-left: 20px;
+        }
+        &:focus::placeholder {
+            color: transparent;
+        }
+    }
+
+    .error {
+        font-family: 'Poppins', sans-serif;
+        color: red;
+        font-size: 15px;
+    }
+
+    .emojiText {
+        margin: 3vh auto 1vh auto;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 18px;
+    }
+
+    .button {
+        background-color: transparent;
+        color: #157A6E;
+        margin-top: 4vh;
+        width: 200px;
+        height: 60px;
+        line-height: 40px;
+        vertical-align: middle;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+        border: 5px solid;
+        transition: 0.25s;
+        outline: none;
+        cursor: pointer;
+        &:hover {
+            color: #282828;
+            border-color: #FFD447;
+            animation: pulse 1s;
+            box-shadow: 0 0 0 1em rgba(#fff, 0);
+        }
+
+        .inner {
+            width: 200px;
+            height: 60px;
+
+            .buttonText {
+                color: inherit;
+                text-decoration: none;
+            }
+        }
+    
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 #FFD447 }
+        }
+    }
+}

@@ -1,0 +1,14 @@
+.mapControls {
+    .gameMap {
+        .tilesLayer,
+        .spritesLayer,
+        .tilesLayer div,
+        .spritesLayer div {
+            position: absolute;
+        }
+          
+        .tilesLayer div {
+            border: 1px solid #282828;
+        }            
+    }
+}
