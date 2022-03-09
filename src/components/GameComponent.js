@@ -166,7 +166,7 @@ const GameComponent = () => {
             if (state.inputText === resultValue && state.inputText !== '' && resultValue !== '') {
                 count.current += 1;
                 document.getElementById('error').textContent = "";
-                
+
                 this.movePlayer();
                 this.checkGoal();
             } else if (state.inputText !== resultValue) {

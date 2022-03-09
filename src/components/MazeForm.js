@@ -8,7 +8,7 @@ const TextInput = ({ label, ...props }) => {
     const [field, meta] = useField(props);
     return (
         <>
-            <input className={styles.inputField} {...field} {...props} />
+            <input className={styles.inputField} id="inputForm" {...field} {...props} />
         </>
     );
 };
@@ -27,13 +27,14 @@ const MazeForm = () => {
             initialValues={{
                 text: ''
             }}
-            onSubmit={async (values) => {
+            onSubmit={async (values, { resetForm }) => {
                 state.inputText = values.text;
                 changeInputValue(values.text);
                 // console.log(values);
+                resetForm();
             }}>
             {({ isSubmitting }) => (
-                <Form className={styles.mathsContainer}>
+                <Form id="form" className={styles.mathsContainer}>
                     <div className={styles.exercises}>Задачи за решаване</div>
 
                     <div className={styles.mathsTasks}>
