@@ -72,7 +72,7 @@ const EmojiSelector = () => {
                     <button type='submit'
                         disabled={isSubmitting}
                         className={styles.button}
-                        onClick={() => { window.location.href = "http://localhost:3000/game" }}>
+                        onClick={() => { window.location.href = "https://prosveta-coding.vercel.app/game" }}>
                         Започни игра!
                     </button>
                 </Form>

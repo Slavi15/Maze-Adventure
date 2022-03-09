@@ -5,7 +5,7 @@ import img from '../assets/park.jpg';
 const FinishScreen = () => {
     function handleClick() {
         sessionStorage.clear();
-        window.location.href = 'http://localhost:3000/heroes';
+        window.location.href = 'https://prosveta-coding.vercel.app/heroes';
     };
 
     return (
