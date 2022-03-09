@@ -153,7 +153,7 @@ const GameComponent = () => {
         Game.prototype.checkGoal = function () {
             if (this.player.x === this.goal.x && this.player.y === this.goal.y) {
                 // console.log('Good Job!');
-                window.location.href = 'http://localhost:3000/finish';
+                window.location.href = 'https://prosveta-coding.vercel.app/finish';
             };
         };
 
