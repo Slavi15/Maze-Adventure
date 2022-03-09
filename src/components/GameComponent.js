@@ -70,6 +70,11 @@ const GameComponent = () => {
                     this.active = false;
                 };
             });
+
+            document.body.addEventListener('click', () => {
+                document.getElementById('overlay').style.display = 'none';
+                this.active = false;
+            });
         };
 
         Game.prototype.populateMap = function () {
