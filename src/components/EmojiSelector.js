@@ -37,47 +37,46 @@ const EmojiSelector = () => {
                 sessionStorage.setItem('emoji', chosenEmoji.emoji);
                 // console.log(values);
             }}>
-                {({ isSubmitting }) => (
-                    <Form className={styles.container}>
-                        <TextInput 
-                            name="name"
-                            type="text"
-                            placeholder="Въведи име" />
+            {({ isSubmitting }) => (
+                <Form className={styles.container}>
+                    <TextInput
+                        name="name"
+                        type="text"
+                        placeholder="Въведи име" />
 
-                        {chosenEmoji ? (
-                            <span className={styles.emojiText}>Твоят герой: {chosenEmoji.emoji}</span>
-                        ) : (
-                            <span className={styles.emojiText}>Избери герой!</span>
-                        )}
+                    {chosenEmoji ? (
+                        <span className={styles.emojiText}>Твоят герой: {chosenEmoji.emoji}</span>
+                    ) : (
+                        <span className={styles.emojiText}>Избери герой!</span>
+                    )}
 
-                        <Picker onEmojiClick={onEmojiClick}
-                            native={true}
-                            skinTone={SKIN_TONE_NEUTRAL}
-                            disableSearchBar={true}
-                            className={styles.emojiPicker}
-                            groupVisibility={{
-                                recently_used: false,
-                                symbols: false,
-                                flags: false,
-                                food_drink: false,
-                                travel_places: false,
-                                activities: false,
-                                objects: false
-                            }}
-                            groupNames={{
-                                smileys_people: 'Човечета и емотикони',
-                                animals_nature: 'Животни и природа'
-                            }} />
+                    <Picker onEmojiClick={onEmojiClick}
+                        native={true}
+                        skinTone={SKIN_TONE_NEUTRAL}
+                        disableSearchBar={true}
+                        className={styles.emojiPicker}
+                        groupVisibility={{
+                            recently_used: false,
+                            symbols: false,
+                            flags: false,
+                            food_drink: false,
+                            travel_places: false,
+                            activities: false,
+                            objects: false
+                        }}
+                        groupNames={{
+                            smileys_people: 'Човечета и емотикони',
+                            animals_nature: 'Животни и природа'
+                        }} />
 
-                        
-                        <button type='submit'
-                            disabled={isSubmitting} 
-                            className={styles.button}
-                            onClick={() => { window.location.href = "http://localhost:3000/game" }}>
-                                Започни игра!
-                        </button>
-                    </Form>    
-                )}
+                    <button type='submit'
+                        disabled={isSubmitting}
+                        className={styles.button}
+                        onClick={() => { window.location.href = "http://localhost:3000/game" }}>
+                        Започни игра!
+                    </button>
+                </Form>
+            )}
         </Formik>
     )
 }
