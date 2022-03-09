@@ -2,6 +2,7 @@ import React, { useEffect, useState, useRef, useContext } from 'react';
 import { AppContext } from './MazeComponent.js';
 import styles from '../styles/Game.module.scss';
 import img from '../assets/flag.png';
+import audioFile from '../audio/wrong_sound.wav';
 const PF = require('pathfinding');
 
 const GameComponent = () => {
@@ -158,12 +159,9 @@ const GameComponent = () => {
                 
                 this.movePlayer();
                 this.checkGoal();
-
-                // console.log(`x: ${path.current[count.current][0]}, y: ${path.current[count.current][1]}`);
-                // console.log('Correct!');
-                // console.log(`State: ${state.inputText}`);
-                // console.log(`Result: ${resultValue}`);
             } else if (state.inputText !== resultValue) {
+                const audio = new Audio(audioFile);
+                audio.play();
                 document.getElementById('error').textContent = "Помисли и опитай отново!";
             };
 

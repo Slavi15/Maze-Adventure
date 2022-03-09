@@ -3,7 +3,7 @@ import styles from '../styles/Landing.module.scss';
 
 const Landing = () => {
     return (
-        <div className={styles.container}>
+        <div className={styles.landingContainer}>
             <section className={styles.textContent}>
                 <div className={styles.text}>Умножавай вярно и открий пътя към увеселителния парк!</div>
                 <Link to="/heroes">

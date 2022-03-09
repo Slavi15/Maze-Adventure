@@ -1,0 +1,59 @@
+.navbar {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .a {
+        text-decoration: none;
+        color: #282828;
+
+        .logo {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 18px;
+            margin-left: 5vw;
+        }
+    }
+
+    .navLinks {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        color: #282828;
+        background-color: whitesmoke;
+        text-align: center;
+        align-items: center;
+        height: 100%;
+        width: 0;
+        overflow-x: hidden;
+        top: 0;
+        right: 0;
+        padding-top: 10px;
+        transition: 0.75s;
+        z-index: 100;
+        
+        .link {
+            position: absolute;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 16px;
+            text-decoration: none;
+            font-weight: bold;
+            letter-spacing: 1.5px;
+            margin-bottom: 5vh;
+            bottom: 0;
+        }
+
+        .timesIcon {
+            margin-top: 2vh;
+            font-size: 25px;
+            cursor: pointer;
+        }
+    }
+
+    .icon {
+        font-size: 25px;
+        margin-right: 5vw;
+        cursor: pointer;
+    }
+}
