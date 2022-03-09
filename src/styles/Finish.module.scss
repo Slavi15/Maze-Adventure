@@ -1,4 +1,5 @@
 .finishContainer {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -10,7 +11,7 @@
     }
 
     .text {
-        margin: 3vh auto 3vh auto;
+        margin: 3vh auto;
         width: 60%;
         font-family: 'Montserrat', sans-serif;
         font-size: 30px;
@@ -45,5 +46,24 @@
 
     .confetti {
         margin: 0 auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .finishContainer {
+        .img {
+            max-width: 80% !important;
+        }
+
+        .text {
+            width: 80% !important;
+            font-size: 25px;
+        }
+
+        .button {
+            width: 210px;
+            height: 65px;
+            margin: 2vh auto 0 auto;
+        }
     }
 }

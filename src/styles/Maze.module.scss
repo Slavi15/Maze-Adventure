@@ -34,3 +34,21 @@
         letter-spacing: 1px
     }
 }
+
+@media (max-width: 1200px) {
+    .container {
+        width: 100% !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center !important;
+        margin: auto !important;
+    }
+
+    .overlay {
+        .mainMessage {
+            width: 75% !important;
+            font-size: 30px;
+            margin: 20% auto !important;
+        }
+    }
+}

@@ -55,10 +55,6 @@ const EmojiSelector = () => {
                             skinTone={SKIN_TONE_NEUTRAL}
                             disableSearchBar={true}
                             className={styles.emojiPicker}
-                            pickerStyle={{
-                                width: '30%',
-                                margin: '0 auto 1vh auto' 
-                            }}
                             groupVisibility={{
                                 recently_used: false,
                                 symbols: false,

@@ -6,7 +6,7 @@ const Navbar = () => {
     const navSlide = () => {
         const nav = document.getElementById('navLinks');
         if (window.innerWidth < 700) {
-            nav.style.width = '275px';
+            nav.style.width = '100%';
         } else {
             nav.style.width = '325px';
         }

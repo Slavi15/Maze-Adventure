@@ -104,8 +104,13 @@ const GameComponent = () => {
         Game.prototype.sizeUp = function () {
             let map = this.el.querySelector('#gameMap');
 
-            map.style.height = (this.map.length * this.tileDimensions) + 'px';
-            map.style.height = (this.map[0].length * this.tileDimensions) + 'px';
+            if (window.innerWidth <= '500px') {
+                map.style.height = (this.map.length * 50) + 'px';
+                map.style.height = (this.map[0].length * 50) + 'px';
+            } else {
+                map.style.height = (this.map.length * this.tileDimensions) + 'px';
+                map.style.height = (this.map[0].length * this.tileDimensions) + 'px';
+            }
         };
 
         Game.prototype.placeSprite = function (type) {

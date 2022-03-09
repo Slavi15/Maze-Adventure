@@ -13,7 +13,7 @@ html, body {
 };
 
 .gameContainer {
-  width: 20%;
+  width: 30%;
   margin: 12% auto 3vh auto;
 }
 
@@ -36,4 +36,11 @@ html, body {
 .goal {
   vertical-align: middle;
   text-align: center;
+}
+
+@media (max-width: 1200px) {
+  .gameContainer {
+    width: 100% !important;
+    margin: 5% auto 0 auto !important;
+  }
 }

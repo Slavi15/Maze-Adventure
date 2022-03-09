@@ -12,3 +12,10 @@
         }            
     }
 }
+
+@media (max-width: 1200px) {
+    .innerContainer {
+        width: 100% !important;
+        margin: 5% auto 0 auto !important;
+    }
+}
