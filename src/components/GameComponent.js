@@ -9,6 +9,7 @@ const GameComponent = () => {
     // eslint-disable-next-line no-unused-vars
     const { state, dispatch } = useContext(AppContext);
     const [resultValue, setResult] = useState('');
+    const resultArray = useRef([]);
     const count = useRef(0);
     const path = useRef([]);
 
@@ -162,7 +163,7 @@ const GameComponent = () => {
             };
         };
 
-        Game.prototype.generateTask = function () {
+        Game.prototype.checkTask = function () {
             if (state.inputText === resultValue && state.inputText !== '' && resultValue !== '') {
                 count.current += 1;
                 document.getElementById('error').textContent = "";
@@ -175,6 +176,13 @@ const GameComponent = () => {
                 document.getElementById('error').textContent = "Помисли и опитай отново!";
             };
 
+            this.generateTask();
+            if (resultValue === resultArray.current[resultArray.current.length - 1]) {
+                this.generateTask();
+            };
+        };
+
+        Game.prototype.generateTask = function() {
             const numberOne = document.getElementById('numberOne');
             const numberTwo = document.getElementById('numberTwo');
 
@@ -185,6 +193,7 @@ const GameComponent = () => {
             numberTwo.innerHTML = `${randomNumberTwo}`;
 
             let result = `${randomNumberOne * randomNumberTwo}`;
+            resultArray.current.push(result);
             setResult(result);
         };
 
@@ -195,7 +204,7 @@ const GameComponent = () => {
         mazeGame.player.el = playerSprite;
         mazeGame.placeSprite('goal');
         mazeGame.checkActive();
-        mazeGame.generateTask();
+        mazeGame.checkTask();
 
         //  eslint-disable-next-line react-hooks/exhaustive-deps
     }, [state.inputText]);

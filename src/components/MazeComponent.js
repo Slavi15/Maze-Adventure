@@ -32,7 +32,7 @@ const MazeComponent = () => {
             </div>
             <div id="overlay" className={styles.overlay}>
                 <div className={styles.mainMessage}>{`Реши вярно всички задачи и преведи героя на име ${sessionStorage.getItem('name')} по пътя до света на забавленията, който го очаква от другата страна`}</div>
-                <div className={styles.text}>Натисни SPACE, за да продължиш</div>
+                <div className={styles.text}>Натиснете SPACE или кликнете някъде по екрана</div>
             </div>
         </div>
     )
