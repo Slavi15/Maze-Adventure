@@ -35,6 +35,7 @@ const EmojiSelector = () => {
             onSubmit={async (values) => {
                 sessionStorage.setItem('name', values.name);
                 sessionStorage.setItem('emoji', chosenEmoji.emoji);
+                window.location.href = "https://prosveta-coding.vercel.app/game";
                 // console.log(values);
             }}>
             {({ isSubmitting }) => (
@@ -50,29 +51,58 @@ const EmojiSelector = () => {
                         <span className={styles.emojiText}>Избери герой!</span>
                     )}
 
-                    <Picker onEmojiClick={onEmojiClick}
-                        native={true}
-                        skinTone={SKIN_TONE_NEUTRAL}
-                        disableSearchBar={true}
-                        className={styles.emojiPicker}
-                        groupVisibility={{
-                            recently_used: false,
-                            symbols: false,
-                            flags: false,
-                            food_drink: false,
-                            travel_places: false,
-                            activities: false,
-                            objects: false
-                        }}
-                        groupNames={{
-                            smileys_people: 'Човечета и емотикони',
-                            animals_nature: 'Животни и природа'
-                        }} />
+                    {window.innerWidth <= 700 ?
+                        <>
+                            <Picker onEmojiClick={onEmojiClick}
+                                native={false}
+                                skinTone={SKIN_TONE_NEUTRAL}
+                                disableSearchBar={true}
+                                pickerStyle={{
+                                    width: '90%',
+                                    margin: '2vh auto 1vh auto'
+                                }}
+                                groupVisibility={{
+                                    recently_used: false,
+                                    symbols: false,
+                                    flags: false,
+                                    food_drink: false,
+                                    travel_places: false,
+                                    activities: false,
+                                    objects: false
+                                }}
+                                groupNames={{
+                                    smileys_people: 'Човечета и емотикони',
+                                    animals_nature: 'Животни и природа'
+                                }} />
+                        </> :
+                        <>
+                            <Picker onEmojiClick={onEmojiClick}
+                                native={false}
+                                skinTone={SKIN_TONE_NEUTRAL}
+                                disableSearchBar={true}
+                                pickerStyle={{
+                                    width: '40%',
+                                    margin: '2vh auto 1vh auto'
+                                }}
+                                groupVisibility={{
+                                    recently_used: false,
+                                    symbols: false,
+                                    flags: false,
+                                    food_drink: false,
+                                    travel_places: false,
+                                    activities: false,
+                                    objects: false
+                                }}
+                                groupNames={{
+                                    smileys_people: 'Човечета и емотикони',
+                                    animals_nature: 'Животни и природа'
+                                }} />
+                        </>
+                    }
 
                     <button type='submit'
                         disabled={isSubmitting}
-                        className={styles.button}
-                        onClick={() => { window.location.href = "https://prosveta-coding.vercel.app/game" }}>
+                        className={styles.button}>
                         Започни игра!
                     </button>
                 </Form>

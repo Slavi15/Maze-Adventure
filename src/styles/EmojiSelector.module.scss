@@ -36,11 +36,6 @@
         font-size: 15px;
     }
 
-    .emojiPicker {
-        width: 40%;
-        margin: 2vh auto 1vh auto
-    }
-
     .emojiText {
         margin: 3vh auto 1vh auto;
         font-family: 'Montserrat', sans-serif;
@@ -88,9 +83,5 @@
 @media (max-width: 700px) {
     .input {
         width: 75% !important;
-    }
-
-    .emojiPicker {
-        width: 90% !important;
     }
 }
