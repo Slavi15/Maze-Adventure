@@ -13,7 +13,7 @@ html, body {
 };
 
 .gameContainer {
-  width: 30%;
+  width: 40%;
   margin: 12% auto 3vh auto;
 }
 
@@ -40,7 +40,6 @@ html, body {
 
 @media (max-width: 1200px) {
   .gameContainer {
-    width: 100% !important;
-    margin: 5% auto 0 auto !important;
+    margin: 5% auto 3vh auto;
   }
 }
