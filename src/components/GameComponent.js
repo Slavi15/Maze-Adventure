@@ -1,9 +1,12 @@
 import React, { useEffect, useState, useRef, useContext } from 'react';
 import { AppContext } from './MazeComponent.js';
+import levels from './levels.js';
 import styles from '../styles/Game.module.scss';
 import img from '../assets/flag.png';
 import audioFile from '../audio/wrong_sound.wav';
 const PF = require('pathfinding');
+
+let randomLevelNumber = Math.floor(Math.random() * 10);
 
 const GameComponent = () => {
     // eslint-disable-next-line no-unused-vars
@@ -13,33 +16,12 @@ const GameComponent = () => {
     const count = useRef(0);
     const path = useRef([]);
 
-    let levels = [];
-    levels[0] = {
-        map: [
-            [0, 0, 1, 0, 1, 0],
-            [1, 0, 1, 0, 0, 0],
-            [1, 0, 0, 0, 1, 1],
-            [0, 0, 1, 0, 1, 0],
-            [0, 1, 0, 0, 1, 0],
-            [1, 1, 1, 0, 0, 0]
-        ],
-        player: {
-            x: 0,
-            y: 0
-        },
-        goal: {
-            x: 5,
-            y: 5
-        },
-        theme: 'default'
-    };
-
     useEffect(() => {
         document.getElementById('overlay').style.display = 'block';
 
-        let grid = new PF.Grid(levels[0].map);
+        let grid = new PF.Grid(levels[randomLevelNumber].map);
         let finder = new PF.AStarFinder();
-        path.current = finder.findPath(0, 0, 5, 5, grid);
+        path.current = finder.findPath(0, 0, levels[randomLevelNumber].goal.x, levels[randomLevelNumber].goal.y, grid);
 
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
@@ -197,7 +179,7 @@ const GameComponent = () => {
             setResult(result);
         };
 
-        let mazeGame = new Game('gameContainer', levels[0]);
+        let mazeGame = new Game('gameContainer', levels[randomLevelNumber]);
         mazeGame.populateMap();
         mazeGame.sizeUp();
         let playerSprite = mazeGame.placeSprite('player');
