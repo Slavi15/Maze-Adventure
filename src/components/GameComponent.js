@@ -27,8 +27,6 @@ const GameComponent = () => {
     }, []);
 
     useEffect(() => {
-        // const pathButton = document.getElementById('pathButton');
-
         function Game(id, level) {
             this.el = document.getElementById(id);
 

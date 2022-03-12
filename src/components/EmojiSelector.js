@@ -35,7 +35,7 @@ const EmojiSelector = () => {
             onSubmit={async (values) => {
                 sessionStorage.setItem('name', values.name);
                 sessionStorage.setItem('emoji', chosenEmoji.emoji);
-                window.location.href = "http://localhost:3000/game";
+                window.location.href = "https://prosveta-coding.vercel.app/game";
                 // console.log(values);
             }}>
             {({ isSubmitting }) => (
