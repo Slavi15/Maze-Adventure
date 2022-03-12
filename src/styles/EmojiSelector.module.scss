@@ -6,8 +6,8 @@
     flex-direction: column;
 
     .input {
-        width: 25%;
-        margin: 8vh auto 1vh auto;
+        width: 35%;
+        margin: 7vh auto 1vh auto;
         height: 6vh;
         vertical-align: middle;
         border-radius: 5px;
@@ -37,7 +37,7 @@
     }
 
     .emojiText {
-        margin: 3vh auto 1vh auto;
+        margin: 2vh auto 1vh auto;
         font-family: 'Montserrat', sans-serif;
         font-size: 18px;
     }
@@ -75,7 +75,9 @@
         }
     
         @keyframes pulse {
-            0% { box-shadow: 0 0 0 0 #FFD447 }
+            0% { 
+                box-shadow: 0 0 0 0 #FFD447 
+            }
         }
     }
 }

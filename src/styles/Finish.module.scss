@@ -6,8 +6,8 @@
     justify-content: center;
 
     .img {
-        margin: 7vh auto 2vh auto;
-        max-width: 40%;
+        margin: 7vh auto 1vh auto;
+        max-width: 37.5%;
     }
 
     .text {
@@ -42,10 +42,6 @@
         @keyframes pulse {
             0% { box-shadow: 0 0 0 0 #FFD447 }
         }
-    }
-
-    .confetti {
-        margin: 0 auto;
     }
 }
 
