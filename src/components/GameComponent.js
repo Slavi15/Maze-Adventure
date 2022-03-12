@@ -154,6 +154,7 @@ const GameComponent = () => {
                 const audio = new Audio(audioFile);
                 audio.play();
                 document.getElementById('error').textContent = "Помисли и опитай отново!";
+                return;
             };
 
             this.generateTask();
@@ -162,7 +163,7 @@ const GameComponent = () => {
             };
         };
 
-        Game.prototype.generateTask = function() {
+        Game.prototype.generateTask = function () {
             const numberOne = document.getElementById('numberOne');
             const numberTwo = document.getElementById('numberTwo');
 
