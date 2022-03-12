@@ -25,7 +25,7 @@ const FinishScreen = () => {
                             '#a0c4ff',
                             '#ffc6ff'
                         ]}
-                        floorHeight={575}
+                        floorHeight={850}
                         floorWidth={250}
                         className={styles.confetti} />
                 </> :
@@ -43,8 +43,8 @@ const FinishScreen = () => {
                             '#a0c4ff',
                             '#ffc6ff'
                         ]}
-                        floorHeight={650}
-                        floorWidth={800}
+                        floorHeight={1500}
+                        floorWidth={700}
                         className={styles.confetti} />
                 </>
             }
