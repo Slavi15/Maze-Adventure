@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/Prosveta-Maze-Adventurer/static/css/main.daec5747.css",
-    "main.js": "/Prosveta-Maze-Adventurer/static/js/main.58205045.js",
-    "static/js/27.95291165.chunk.js": "/Prosveta-Maze-Adventurer/static/js/27.95291165.chunk.js",
-    "static/media/park.jpg": "/Prosveta-Maze-Adventurer/static/media/park.fb75f1ef2a75a8eb1edf.jpg",
-    "static/media/wrong_sound.wav": "/Prosveta-Maze-Adventurer/static/media/wrong_sound.61d8264cf7e7047cf510.wav",
-    "index.html": "/Prosveta-Maze-Adventurer/index.html"
+    "main.css": "/Maze-Adventurer/static/css/main.daec5747.css",
+    "main.js": "/Maze-Adventurer/static/js/main.9bfe9284.js",
+    "static/js/27.95291165.chunk.js": "/Maze-Adventurer/static/js/27.95291165.chunk.js",
+    "static/media/park.jpg": "/Maze-Adventurer/static/media/park.fb75f1ef2a75a8eb1edf.jpg",
+    "static/media/wrong_sound.wav": "/Maze-Adventurer/static/media/wrong_sound.61d8264cf7e7047cf510.wav",
+    "index.html": "/Maze-Adventurer/index.html"
   },
   "entrypoints": [
     "static/css/main.daec5747.css",
-    "static/js/main.58205045.js"
+    "static/js/main.9bfe9284.js"
   ]
 }
