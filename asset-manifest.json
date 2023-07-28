@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/://slavi15.github.io/Maze-Adventure/static/css/main.daec5747.css",
-    "main.js": "/://slavi15.github.io/Maze-Adventure/static/js/main.5894b997.js",
-    "static/js/27.95291165.chunk.js": "/://slavi15.github.io/Maze-Adventure/static/js/27.95291165.chunk.js",
-    "static/media/park.jpg": "/://slavi15.github.io/Maze-Adventure/static/media/park.fb75f1ef2a75a8eb1edf.jpg",
-    "static/media/wrong_sound.wav": "/://slavi15.github.io/Maze-Adventure/static/media/wrong_sound.61d8264cf7e7047cf510.wav",
-    "index.html": "/://slavi15.github.io/Maze-Adventure/index.html"
+    "main.css": "/Maze-Adventurer/static/css/main.daec5747.css",
+    "main.js": "/Maze-Adventurer/static/js/main.123adb87.js",
+    "static/js/27.95291165.chunk.js": "/Maze-Adventurer/static/js/27.95291165.chunk.js",
+    "static/media/park.jpg": "/Maze-Adventurer/static/media/park.fb75f1ef2a75a8eb1edf.jpg",
+    "static/media/wrong_sound.wav": "/Maze-Adventurer/static/media/wrong_sound.61d8264cf7e7047cf510.wav",
+    "index.html": "/Maze-Adventurer/index.html"
   },
   "entrypoints": [
     "static/css/main.daec5747.css",
-    "static/js/main.5894b997.js"
+    "static/js/main.123adb87.js"
   ]
 }
