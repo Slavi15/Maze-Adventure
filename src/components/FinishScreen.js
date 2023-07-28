@@ -5,7 +5,7 @@ import img from '../assets/park.jpg';
 const FinishScreen = () => {
     function handleClick() {
         sessionStorage.clear();
-        window.location.href = 'https://slavi15.github.io/Prosveta-Maze-Adventurer/#/heroes';
+        window.location.href = 'https://slavi15.github.io/Maze-Adventurer/#/heroes';
     };
 
     return (
