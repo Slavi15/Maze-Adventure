@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Maze-Adventurer/static/css/main.daec5747.css",
-    "main.js": "/Maze-Adventurer/static/js/main.123adb87.js",
+    "main.js": "/Maze-Adventurer/static/js/main.19d4a006.js",
     "static/js/27.95291165.chunk.js": "/Maze-Adventurer/static/js/27.95291165.chunk.js",
     "static/media/park.jpg": "/Maze-Adventurer/static/media/park.fb75f1ef2a75a8eb1edf.jpg",
     "static/media/wrong_sound.wav": "/Maze-Adventurer/static/media/wrong_sound.61d8264cf7e7047cf510.wav",
@@ -9,6 +9,6 @@
   },
   "entrypoints": [
     "static/css/main.daec5747.css",
-    "static/js/main.123adb87.js"
+    "static/js/main.19d4a006.js"
   ]
 }
