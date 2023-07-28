@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { HashRouter, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar.js';
 import Landing from './components/Landing.js';
 import EmojiSelector from './components/EmojiSelector.js';
@@ -9,7 +9,7 @@ import FinishScreen from './components/FinishScreen.js';
 const App = () => {
   return (
     <div>
-      <BrowserRouter>
+      <HashRouter>
         <Navbar />
         <Routes>
           <Route exact path="/" element={<Landing />}></Route>
@@ -17,7 +17,7 @@ const App = () => {
           <Route exact path="/game" element={<MazeComponent />}></Route>
           <Route exact path="/finish" element={<FinishScreen />}></Route>
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }
