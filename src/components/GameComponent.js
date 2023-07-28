@@ -139,7 +139,7 @@ const GameComponent = () => {
         Game.prototype.checkGoal = function () {
             if (this.player.x === this.goal.x && this.player.y === this.goal.y) {
                 // console.log('Good Job!');
-                window.location.href = 'https://slavi15.github.io/Maze-Adventurer/#/finish';
+                window.location.href = 'https://slavi15.github.io/Prosveta-Maze-Adventurer/#/finish';
             };
         };
 
